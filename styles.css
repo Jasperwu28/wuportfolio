@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     background-color: #ffffff;
     color: #000000;
@@ -33,4 +32,21 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Additional styles for the arrow links */
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    padding-left: 20px; /* Adjust padding for arrow space */
+}
+
+.links a::before {
+    content: '↪'; /* Arrow character */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000000; /* Color of the arrow */
 }
