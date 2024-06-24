@@ -1,52 +1,74 @@
 body {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 40px;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 20px auto;
+    margin-left: 40px;  /* Moves content to the left */
 }
 
-h1, h2 {
-    text-align: left;
-    font-weight: normal;
-}
-
-hr {
-    border: 1px solid #000000;
-    margin: 20px 0;
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 p {
-    margin: 10px 0;
+    margin-bottom: 15px;
 }
 
-a {
-    color: #0000EE;
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 30px 0;
+}
+
+.work-item {
+    margin-bottom: 20px;
+}
+
+.work-item p {
+    margin: 5px 0;
+}
+
+.description {
+    color: #666;
+    font-style: italic;
+}
+
+.sub-links {
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+
+.sub-links a {
+    color: #1a0dab;
     text-decoration: none;
 }
 
-a:hover {
+.sub-links a:hover {
     text-decoration: underline;
 }
 
-/* Additional styles for the arrow links */
-.links a {
-    display: block;
-    text-decoration: none;
-    color: #000000;
-    position: relative;
-    padding-left: 20px; /* Adjust padding for arrow space */
+.sub-links ul {
+    margin: 5px 0 15px 20px;
+    padding: 0;
 }
 
-.links a::before {
-    content: '↪'; /* Arrow character */
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #000000; /* Color of the arrow */
+.sub-links li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.sub-links li:before {
+    content: "•";
+    color: #1a0dab;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
